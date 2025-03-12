@@ -1,9 +1,22 @@
 model Model
 	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-MX
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
 
 annotation PBI_ProTooling = ["DevMode"]
 
 annotation PBIDesktopVersion = 2.140.1476.0 (25.02)+e8c6a85d1d09735c5c055c3244a60ff4076cd2cf
+
+annotation PBI_QueryOrder = ["financials"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+ref table financials
+ref table DateTableTemplate_834053cd-2772-43fc-968d-7f98a4084488
+ref table LocalDateTable_f64423c4-0884-4189-9818-522dab81cece
 
 ref cultureInfo es-MX
 
